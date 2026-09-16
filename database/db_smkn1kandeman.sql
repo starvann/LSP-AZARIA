@@ -1,12 +1,3 @@
--- =========================================================
--- DATABASE: db_smkn1kandeman
--- Website & Admin Panel - SMK Negeri 1 Kandeman
--- =========================================================
--- Cara pakai (XAMPP/Laragon):
--- 1. Buka phpMyAdmin -> tab "Import" -> pilih file ini -> Go
---    ATAU
--- 2. mysql -u root -p < db_smkn1kandeman.sql
--- =========================================================
 
 CREATE DATABASE IF NOT EXISTS db_smkn1kandeman
   CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
@@ -15,7 +6,6 @@ USE db_smkn1kandeman;
 
 -- =========================================================
 -- TABEL: admin
--- Untuk login admin panel (tahap berikutnya: autentikasi)
 -- =========================================================
 CREATE TABLE IF NOT EXISTS admin (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -25,12 +15,8 @@ CREATE TABLE IF NOT EXISTS admin (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 
--- Akun default: username = admin | password = admin123
--- Password sudah di-hash dengan password_hash() (bcrypt), JANGAN simpan plain text.
 INSERT INTO admin (username, password, nama_lengkap) VALUES
-('admin', '$2y$10$PLvV36T/SNQOFTSkdd4pvuthwNbbBCdOkv6K85JVT8EQYUNp4zZRW', 'Admin Sekolah');
--- Hash di atas = admin123 (hash bcrypt valid, sudah diverifikasi cocok dengan password_verify()).
--- Ganti password ini setelah tahap login/autentikasi dibuat.
+('admin', 'admin123', 'Admin Sekolah');
 
 -- =========================================================
 -- TABEL: berita

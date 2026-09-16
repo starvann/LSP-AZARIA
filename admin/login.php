@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $result = mysqli_stmt_get_result($stmt);
         $admin = $result ? mysqli_fetch_assoc($result) : null;
 
-        if ($admin && password_verify($password, $admin['password'])) {
+        if ($admin && $password === $admin['password']) {
             session_regenerate_id(true);
             $_SESSION['admin_id'] = $admin['id'];
             $_SESSION['admin_username'] = $admin['username'];
