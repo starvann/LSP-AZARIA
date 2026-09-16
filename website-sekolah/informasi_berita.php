@@ -108,8 +108,8 @@ $beritaResult = mysqli_query($koneksi, "SELECT * FROM berita WHERE status = 'Pub
     <div class="foot-grid">
       <div class="foot-about">
         <div class="foot-logo">
-          <div class="logo-mark"><<img src="../assets/LOGO SMK.png" alt="Education"></div>
-          <h3>SMK Negeri 1 Kandeman</h3>
+          <a href="index.php"><div class="logo-mark"><<img src="../assets/LOGO SMK.png" alt="Education" href="index.php"></div>
+          </a>
         </div>
         <p>Terwujudnya tamatan yang berahlak mulia, kompeten, kompetitif dan berwawasan.</p>
       </div>
@@ -127,7 +127,6 @@ $beritaResult = mysqli_query($koneksi, "SELECT * FROM berita WHERE status = 'Pub
         <ul>
           <li><a href="informasi_berita.php">Pengumuman</a></li>
           <li><a href="informasi_berita.php">Berita Sekolah</a></li>
-          <li><a href="kontak.php">PPDB 2026/2027</a></li>
           <li><a href="kontak.php">Kontak</a></li>
         </ul>
       </div>

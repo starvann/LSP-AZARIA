@@ -1,28 +1,4 @@
- // Hero slider
-  const slides = document.querySelectorAll('#heroSlider .slide');
-  const dotsWrap = document.getElementById('sliderDots');
-  let current = 0;
-  slides.forEach((_, i) => {
-    const dot = document.createElement('button');
-    if (i === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => goToSlide(i));
-    dotsWrap.appendChild(dot);
-  });
-  const dots = dotsWrap.querySelectorAll('button');
-  function goToSlide(i){
-    slides[current].classList.remove('active');
-    dots[current].classList.remove('active');
-    current = i;
-    slides[current].classList.add('active');
-    dots[current].classList.add('active');
-  }
-  let autoSlide = setInterval(() => goToSlide((current + 1) % slides.length), 5000);
-  document.getElementById('heroSlider').addEventListener('mouseenter', () => clearInterval(autoSlide));
-  document.getElementById('heroSlider').addEventListener('mouseleave', () => {
-    autoSlide = setInterval(() => goToSlide((current + 1) % slides.length), 5000);
-  });
-
-  // Akademik tabs
+ // Akademik tabs
   const tabBtns = document.querySelectorAll('.tab-btn');
   tabBtns.forEach(btn => {
     btn.addEventListener('click', () => {

@@ -75,33 +75,28 @@ $fasilitasResult = mysqli_query($koneksi, "SELECT * FROM fasilitas ORDER BY nama
       </details>
       <details>
         <summary>Struktur Organisasi<span class="plus">+</span></summary>
-        <!-- <div class="acc-body">
-          <div class="org-chart">
-            <div class="org-row"><div class="org-box">Kepala Sekolah</div></div>
-            <div class="org-row">
-              <div class="org-box alt">Waka Kurikulum</div>
-              <div class="org-box alt">Waka Kesiswaan</div>
-              <div class="org-box alt">Waka Sarpras</div>
-              <div class="org-box alt">Waka Humas</div>
-            </div>
-            <div class="org-row sub">
-              <div class="org-box">Koordinator BK</div>
-              <div class="org-box">Kepala Tata Usaha</div>
-              <div class="org-box">Wali Kelas</div>
-              <div class="org-box">Guru Mata Pelajaran</div>
-            </div>
+        <div class="acc-body">
+          <p>Struktur organisasi SMK Negeri 1 Kandeman tahun 2026, mencakup jajaran pimpinan, wakil kepala sekolah, staf, pengajar kejuruan, pengajar mata pelajaran umum dan pilihan, hingga tenaga kependidikan.</p>
+          <div class="orgchart-frame">
+            <a href="../assets/struktur-organisasi-full.jpg" target="_blank" rel="noopener">
+              <img src="../assets/struktur-organisasi.jpg" alt="Struktur Organisasi SMK Negeri 1 Kandeman 2026" loading="lazy">
+            </a>
           </div>
-        </div> -->
+          <div class="orgchart-caption">
+            <span>Klik gambar untuk membuka versi resolusi penuh.</span>
+            <a href="../assets/struktur-organisasi-full.jpg" target="_blank" rel="noopener">Buka gambar penuh &rarr;</a>
+          </div>
+        </div>
       </details>
+
       <details>
         <summary>Data Guru dan Tenaga Kependidikan<span class="plus">+</span></summary>
         <div class="acc-body">
           <p>Kualitas pendidikan kami ditopang oleh tenaga pengajar dan kependidikan yang kompeten di bidangnya.</p>
           <div class="stat-row">
-            <div class="stat-box"><strong><?php echo $guruAktif; ?></strong><span>Guru Aktif</span></div>
-            <div class="stat-box"><strong><?php echo $tendikTotal; ?></strong><span>Tenaga Kependidikan</span></div>
-            <div class="stat-box"><strong>-</strong><span>Rasio Guru : Siswa</span></div>
-            <div class="stat-box"><strong>-</strong><span>Guru Berpendidikan S2</span></div>
+            <div class="stat-box"><strong>95</strong><span>Guru Aktif</span></div>
+            <div class="stat-box"><strong>19</strong><span>Tenaga Kependidikan</span></div>
+            <div class="stat-box"><strong>18%</strong><span>Guru Berpendidikan S2</span></div>
           </div>
         </div>
       </details>
@@ -128,8 +123,8 @@ $fasilitasResult = mysqli_query($koneksi, "SELECT * FROM fasilitas ORDER BY nama
     <div class="foot-grid">
       <div class="foot-about">
         <div class="foot-logo">
-          <div class="logo-mark"><<img src="../assets/LOGO SMK.png" alt="Education"></div>
-          <h3>SMK Negeri 1 Kandeman</h3>
+          <a href="index.php"><div class="logo-mark"><<img src="../assets/LOGO SMK.png" alt="Education" href="index.php"></div>
+          </a>
         </div>
         <p>Terwujudnya tamatan yang berahlak mulia, kompeten, kompetitif dan berwawasan.</p>
       </div>
@@ -147,7 +142,6 @@ $fasilitasResult = mysqli_query($koneksi, "SELECT * FROM fasilitas ORDER BY nama
         <ul>
           <li><a href="informasi_berita.php">Pengumuman</a></li>
           <li><a href="informasi_berita.php">Berita Sekolah</a></li>
-          <li><a href="kontak.php">PPDB 2026/2027</a></li>
           <li><a href="kontak.php">Kontak</a></li>
         </ul>
       </div>

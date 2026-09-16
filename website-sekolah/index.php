@@ -45,43 +45,37 @@ if ($guruCountRes) { $totalGuruHome = (int) mysqli_fetch_assoc($guruCountRes)['t
 
 <!-- ============ HERO / BERANDA ============ -->
 <section id="beranda">
-  <div class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <span class="eyebrow-label">Selamat Datang di SMK Negeri 1 Kandeman</span>
-        <h1>SMK <em>Pusat Keunggulan</em></h1>
-        <p>Terwujudnya tamatan yang berahlak mulia, kompeten, kompetitif dan berwawasan.</p>
-        <div class="hero-btns">
-          <a href="#profil" class="btn btn-primary">Profil Sekolah</a>
-          <a href="#kontak" class="btn btn-outline">Hubungi Kami</a>
-        </div>
-        <div class="hero-stats">
-          <div><strong>1.240+</strong><span>Siswa Aktif</span></div>
-          <div><strong>68</strong><span>Tenaga Pendidik</span></div>
-          <div><strong>27</strong><span>Tahun Berkarya</span></div>
-          <div><strong>Akreditasi A</strong><span>Sangat Unggul</span></div>
-        </div>
-      </div>
+  <div class="hero-banner">
+    <img class="hero-banner-img" src="../assets/hero-banner.jpg" alt="Upacara bendera siswa SMK Negeri 1 Kandeman">
+    <div class="hero-banner-overlay"></div>
+    <div class="hero-banner-text">
+      <h1>SMK Pusat Keunggulan</h1>
+      <p>Terwujudnya tamatan yang berahlak mulia, kompeten, kompetitif dan berwawasan.</p>
+    </div>
+  </div>
 
-<!-- NANTI INI BISA DI UPDATE -->
-      <div class="slider" id="heroSlider">
-        <div class="slide active">
-          <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=80" alt="Lomba Karya Ilmiah Remaja">
-          <div class="slide-caption"><span>Kegiatan Terbaru</span><h4>Lomba Karya Ilmiah Remaja 2026</h4></div>
+  <div class="wrap">
+    <div class="hero-highlight">
+      <div class="hero-highlight-item">
+        <div class="hh-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 2l2.5 5 5.5.8-4 3.9.9 5.5L12 14.8 7.1 17.2 8 11.7 4 7.8l5.5-.8L12 2Z"/></svg>
+          <h4>Terakreditasi A</h4>
         </div>
-        <div class="slide">
-          <img src="https://images.unsplash.com/photo-1511949860663-92c5c0d48f16?auto=format&fit=crop&w=900&q=80" alt="Pentas Seni">
-          <div class="slide-caption"><span>Kegiatan Terbaru</span><h4>Pentas Seni Akhir Tahun</h4></div>
+        <p>Menunjukkan komitmen sekolah terhadap kualitas penyelenggaraan pendidikan.</p>
+      </div>
+      <div class="hero-highlight-item">
+        <div class="hh-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M2 8L12 3l10 5-10 5-10-5Z"/><path d="M6 10.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/></svg>
+          <h4>Lulusan Kompeten</h4>
         </div>
-        <div class="slide">
-          <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=900&q=80" alt="Wisuda Angkatan">
-          <div class="slide-caption"><span>Kegiatan Terbaru</span><h4>Pelepasan Siswa Angkatan XXVII</h4></div>
+        <p>Membekali peserta didik dengan pengetahuan dan keterampilan sesuai bidang keahlian.</p>
+      </div>
+      <div class="hero-highlight-item">
+        <div class="hh-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M7 21h10M12 18v3"/></svg>
+          <h4>Mitra Industri</h4>
         </div>
-        <div class="slide">
-          <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=900&q=80" alt="Kunjungan Edukasi">
-          <div class="slide-caption"><span>Kegiatan Terbaru</span><h4>Kunjungan Edukasi ke Fakultas Teknik ITB</h4></div>
-        </div>
-        <div class="slider-dots" id="sliderDots"></div>
+        <p>Membangun hubungan dengan dunia usaha dan dunia industri untuk mendukung kesiapan kerja peserta didik.</p>
       </div>
     </div>
   </div>
@@ -108,10 +102,11 @@ if ($guruCountRes) { $totalGuruHome = (int) mysqli_fetch_assoc($guruCountRes)['t
         <img src="../assets/pak set.jpeg" alt="Kepala Sekolah" />
       </div>
       <div class="sambutan-text">
-        <span class="eyebrow-label">Sambutan Kepala Sekolah</span>
+        <h2>Sambutan Kepala Sekolah</h2> <br>
         <div class="sambutan-quote">&ldquo;</div>
-        <p>Pendidikan bukan sekadar mengejar nilai, melainkan menumbuhkan keberanian untuk berpikir, kejujuran untuk bersikap, dan kepedulian untuk bertindak. Di SMA Cendekia Nusantara, kami berkomitmen mendampingi setiap siswa menemukan potensi terbaiknya melalui proses belajar yang bermakna.</p>
-        <p>Kami percaya bahwa sekolah adalah rumah kedua tempat karakter dibentuk seiring dengan kecerdasan diasah. Atas nama seluruh keluarga besar sekolah, saya mengucapkan selamat datang dan terima kasih atas kepercayaan yang diberikan kepada kami.</p>
+        <p>Website ini hadir sebagai media informasi dan komunikasi bagi seluruh warga sekolah maupun masyarakat. Melalui website ini, kami menyediakan berbagai informasi mengenai profil sekolah, program keahlian, kegiatan, prestasi, berita, serta berbagai layanan pendidikan di SMK Negeri 1 Kandeman.</p>
+        <p>Sebagai lembaga pendidikan kejuruan, SMK Negeri 1 Kandeman berkomitmen untuk terus meningkatkan kualitas pendidikan dengan mengembangkan kompetensi, karakter, kreativitas, dan kemandirian peserta didik agar siap menghadapi perkembangan dunia kerja, dunia industri, maupun melanjutkan pendidikan ke jenjang yang lebih tinggi.</p>
+        <p>Kami berharap website ini dapat menjadi sarana informasi yang mudah diakses dan memberikan manfaat bagi seluruh masyarakat.</p>
         <div class="sambutan-sign">
           <div class="line"></div>
           <div>
@@ -192,8 +187,8 @@ if ($guruCountRes) { $totalGuruHome = (int) mysqli_fetch_assoc($guruCountRes)['t
     <div class="foot-grid">
       <div class="foot-about">
         <div class="foot-logo">
-          <div class="logo-mark"><<img src="../assets/LOGO SMK.png" alt="Education"></div>
-          <h3>SMK Negeri 1 Kandeman</h3>
+          <a href="index.php"><div class="logo-mark"><<img src="../assets/LOGO SMK.png" alt="Education" href="index.php"></div>
+          </a>
         </div>
         <p>Terwujudnya tamatan yang berahlak mulia, kompeten, kompetitif dan berwawasan.</p>
       </div>
@@ -211,7 +206,6 @@ if ($guruCountRes) { $totalGuruHome = (int) mysqli_fetch_assoc($guruCountRes)['t
         <ul>
           <li><a href="informasi_berita.php">Pengumuman</a></li>
           <li><a href="informasi_berita.php">Berita Sekolah</a></li>
-          <li><a href="kontak.php">PPDB 2026/2027</a></li>
           <li><a href="kontak.php">Kontak</a></li>
         </ul>
       </div>
@@ -230,10 +224,9 @@ if ($guruCountRes) { $totalGuruHome = (int) mysqli_fetch_assoc($guruCountRes)['t
     </div>
   </div>
 </footer>
-
 <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
 </button>
- <script src="../js/script.js"></script>
+<script src="../js/script.js"></script>
 </body>
 </html>
